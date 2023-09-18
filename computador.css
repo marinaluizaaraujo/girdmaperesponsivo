@@ -1,0 +1,174 @@
+@media all and (min-width:1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        max-width: 100vw;
+        min-height: 100vh;
+        background-color: #fff;
+        /* font-size: 20px; */
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 50px;
+        font-size: 35px;
+    }
+
+    .menu__item {
+        display: flex;
+        align-items: center;
+    }
+
+    .material-icons-outlined {
+        display: block;
+    }
+
+    .container {
+        display: block;
+    }
+
+    /* edião conteudo COMPUTADOR */
+    .conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fort fort fort pubg"
+            "fort fort fort slack"
+            "conteudo__categorias conteudo__categorias cs-go wts"
+        ;
+    }
+
+    .caixa {
+        margin: 3px;
+        background-color: #4582D9;
+        height: 300px;
+        width: 200px;
+    }
+
+
+    .conteudo .conteudo__principal:nth-child(1) {
+        grid-area: fort;
+        background-image: url(img/fortnite.jpg);
+        background-size: cover;
+        background-position: top;
+        width: 78vw;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+
+    .conteudo .conteudo__secundario:nth-child(2) {
+        grid-area: pubg;
+        background-image: url(img/pubg.jpg);
+        background-position: top;
+        background-size: cover;
+        width: 20vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .conteudo .conteudo__secundario:nth-child(3) {
+        grid-area: slack;
+        background-image: url(img/slack.png);
+        background-size: cover;
+        background-position: center;
+        width: 20vw;
+        height: 39vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .conteudo .conteudo__secundario:nth-child(5) {
+        grid-area: cs-go;
+        background-image: url(img/cs-go.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 25.6vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin: 3px;
+    }
+
+    .conteudo .conteudo__secundario:nth-child(6) {
+        grid-area: wts;
+        background-image: url(img/whatsapp.png);
+        background-size: cover;
+        background-position: center;
+        width: 20vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+  /* edição da opacidade da escrita  */
+    .conteudo__titulo {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+       /* 2 grid COMPUTADOR */
+    .conteudo .conteudo__categorias:nth-child(4) {
+        grid-area: conteudo__categorias;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "um dois"
+            "tres quatro"
+        ;
+    }
+
+    .botao {
+        margin: 3px;
+        height: 20vh;
+        width: 25vw;
+        cursor: pointer;
+        display: flex;
+        justify-content: start;
+        /* font-size: 20px; */
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .um {
+        grid-area: um;
+    }
+
+    .dois{
+        grid-area: dois;
+    }
+
+    .tres {
+        grid-area: tres;
+    }
+
+    .quatro{
+        grid-area: quatro;
+    }
+
+}

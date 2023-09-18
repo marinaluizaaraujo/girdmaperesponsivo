@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    body {
+        margin: 0;
+        padding: 0;
+        max-width: 100vw;
+        min-height: 100vh;
+        /* font-size: 35px; */
+        font-family: 'Open Sans', sans-serif;
+        background-color: #fff;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    .menu {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+    }
+
+    .menu__item {
+        display: flex;
+        align-items: center;
+    }
+
+    .material-icons-outlined {
+        display: block;
+    }
+
+    .container {
+        display: none;
+    }
+
+    /* edição conteudo MOBILE FIRST*/
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "fort fort "
+        "pubg slack"
+        "conteudo__categorias conteudo__categorias"
+        "cs-go wts"
+    ;
+}
+
+.caixa {
+    margin: 0.5rem;
+    background-color: #4582D9;
+    height: 300px;
+    width: 200px;
+}
+
+.conteudo .conteudo__principal:nth-child(1) {
+    grid-area: fort;
+    background-image: url(img/fortnite.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 99vw;
+    height: 27vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 2px;
+}
+
+
+.conteudo .conteudo__secundario:nth-child(2) {
+    grid-area: pubg;
+    background-image: url(img/pubg.jpg);
+    background-position: top;
+    background-size: cover;
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 2px;
+}
+
+.conteudo .conteudo__secundario:nth-child(3) {
+    grid-area: slack;
+    background-image: url(img/slack.png);
+    background-size: cover;
+    background-position: center;
+    width: 47vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin: 2px;
+}
+
+
+.conteudo .conteudo__secundario:nth-child(5) {
+    grid-area: cs-go;
+    background-image: url(img/cs-go.jpg);
+    background-size: cover;
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* margin: 2px; */
+}
+
+.conteudo .conteudo__secundario:nth-child(6) {
+    grid-area: wts;
+    background-image: url(img/whatsapp.png);
+    background-size: cover;
+    background-position: center;
+    width: 47vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+/*parte de trás da escrita*/
+
+.conteudo__titulo {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 0 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/*segunda parte*/
+
+.conteudo .conteudo__categorias:nth-child(4) {
+    grid-area: conteudo__categorias;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "um dois"
+        "tres quatro"
+    ;
+}
+
+.botao {
+    margin: 0.5rem;
+    height: 15vh;
+    width: 48vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    /* font-size: 40px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.um{
+    grid-area: um;
+}
+
+.dois {
+    grid-area: dois;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.quatro{
+    grid-area: quatro;
+}
